@@ -3,13 +3,16 @@ const airlines = ["Aeroflot", "Aeromexico", "AeroUnion", "Air Baltic", "Air Cana
     "Allegiant Air", "American Airlines", "Asiana Airlines",
 ];
 
-airlines.sort()
-
 const grid = document.getElementById("project-grid");
 
 for (let i = 0; i < airlines.length; i++) {
     const card = document.createElement("div");
     card.className = "photo-card";
-    card.innerHTML = `<figure><img src ="assets/planespotting/${airlines[i]}.jpg" />${airlines[i]}</figure>`;
+    
+    card.innerHTML = `<figure>
+        <img src ="assets/planespotting/${airlines[i]}.jpg" />
+        <figcaption>${airlines[i]}</figcaption>
+    </figure>`;
+
     grid.appendChild(card);
 }
