@@ -4,11 +4,6 @@ body {
     color: #222;
 }
 
-img{
-    float: right;
-    margin: 0px 0px 15px 20px;
-}
-
 nav {
     background-color: #a2cffe;
     padding: 1rem 2rem;
@@ -45,37 +40,18 @@ p {
     line-height: 1.5;
 }
 
-.project-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.project-card a {
-    color: #222;
-    font-weight: bold;
-}
-
-.project-card a:hover {
-    text-decoration: underline;
-}
-
 .nav-name {
     font-weight: bold;
 }
 
-.project-grid {
+#project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-.project-card img {
+#project-grid img {
     width: 100%;
-}
-
-.project-grid img {
-    width: 100%;
+    object-fit: cover;
 }
 
